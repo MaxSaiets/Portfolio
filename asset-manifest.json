@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.7fda8507.css",
+    "main.js": "/Portfolio/static/js/main.6cf3ae65.js",
+    "static/media/BitcoinList.png": "/Portfolio/static/media/BitcoinList.fb11060065871db5dd76.png",
+    "static/media/FiraCode_Medium.eot": "/Portfolio/static/media/FiraCode_Medium.2de9c640f8b3c6fbe180.eot",
+    "static/media/FiraCode_Regular.eot": "/Portfolio/static/media/FiraCode_Regular.6356a17deb6ef2f8ad3c.eot",
+    "static/media/FiraCode_SemiBold.eot": "/Portfolio/static/media/FiraCode_SemiBold.60aad5adaebd3ab81b67.eot",
+    "static/media/FiraCode_SemiBold.woff": "/Portfolio/static/media/FiraCode_SemiBold.9a34e5a276358b828379.woff",
+    "static/media/FiraCode_Medium.woff": "/Portfolio/static/media/FiraCode_Medium.ee71825b350265d52839.woff",
+    "static/media/FiraCode_Regular.woff": "/Portfolio/static/media/FiraCode_Regular.69e6c3bd428bfd2ba13e.woff",
+    "static/media/FiraCode_SemiBold.woff2": "/Portfolio/static/media/FiraCode_SemiBold.25d4611d2df3a0ab2afb.woff2",
+    "static/media/FiraCode_Medium.woff2": "/Portfolio/static/media/FiraCode_Medium.3d1fe1c38eb49366fe81.woff2",
+    "static/media/FiraCode_Regular.woff2": "/Portfolio/static/media/FiraCode_Regular.c145a913baf7ad921b4c.woff2",
+    "static/media/gmail.svg": "/Portfolio/static/media/gmail.3ec3e699b57588cc382f64911b4db35b.svg",
+    "static/media/telegram.svg": "/Portfolio/static/media/telegram.0589bcfc06ec7b86bfadcb7781a1fd6b.svg",
+    "static/media/upwork.svg": "/Portfolio/static/media/upwork.df7930ab963fd2843e904bc5bc3a473d.svg",
+    "static/media/github.svg": "/Portfolio/static/media/github.154dfd74a7bb1827ec2f4cbc3e87bc13.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.7fda8507.css.map": "/Portfolio/static/css/main.7fda8507.css.map",
+    "main.6cf3ae65.js.map": "/Portfolio/static/js/main.6cf3ae65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fda8507.css",
+    "static/js/main.6cf3ae65.js"
+  ]
+}
