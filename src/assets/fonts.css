@@ -1,4 +1,27 @@
 @font-face {
+    font-family: LibreBodoni;
+    font-weight: 500;
+    font-style: normal;
+    src: local("LibreBodoni"), 
+        url("./fonts/LibreBodoni_Medium.woff2") format('woff2'),
+        url("./fonts/LibreBodoni_Medium.woff") format('woff'), 
+        url("./fonts/LibreBodoni_Medium.eot") format('eot');
+    font-display: swap;
+}
+@font-face {
+    font-family: CenturyExpanded;
+    font-weight: 400;
+    font-style: normal;
+    src: local("CenturyExpanded"), 
+        url("./fonts/CenturyExpanded_Regular.woff2") format('woff2'),
+        url("./fonts/CenturyExpanded_Regular.woff") format('woff'), 
+        url("./fonts/CenturyExpanded_Regular.eot") format('eot');
+    font-display: swap;
+}
+
+
+
+@font-face {
     font-family: FiraCode;
     font-weight: 400;
     font-style: normal;

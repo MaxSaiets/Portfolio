@@ -6,7 +6,7 @@ import ButtonSimple from "../../ButtonSimple/ButtonSimple";
 const Home = () => {   
 
     return(
-        <section>
+        <section className="Home" id="section1" data-section>
             <div className="container">
                 <div className="home_wrapper">
                     <div className="home_title">

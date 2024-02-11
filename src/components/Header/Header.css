@@ -3,8 +3,15 @@
     top: 0px;
     background: var(--headerBG);
 
-    z-index: 1000;
+    z-index: 9999;
+
+    background-color: var(--headerBG);  
+    backdrop-filter: saturate(180%) blur(20px);
+
+    font-family: "LibreBodoni";
+    font-weight: 500;
 }
+
 .header_nav{
     padding-top: 20px;
     padding-bottom: 10px;
@@ -16,21 +23,22 @@
 .header_logo{
     position: absolute;
     top: 15px;
-    /* left: calc((100vw - 100%) / -2 + 10%); */
-    left: calc((100vw - 70%) / -2 + 5%);
-    
-    width: 600px;
-    height: 50px;
-    text-align: center;
+    /* left: calc((100vw - 70%) / -2 + 15%); */
+    left: 0px;
 
-    transform:rotateZ(-11deg);
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+.header_logo__img{
+    width: 30px;
+    height: 30px;
 
-    background-color: var(--headerBG);
-    z-index: 1;
+    filter: invert(100%)
 }
 .header_logo__text{
     font-size: 30px;
-    padding-top: 13px;
 }
 
 
@@ -53,6 +61,7 @@
     color: var(--textColorWhite);
 }
 .headerNav_span{
+    padding-right: 2px;
     color: var(--textColorSecond)
 }
 
@@ -70,7 +79,7 @@
 
 .header_leftDecor__container{
     position: absolute;
-    top: 0;
+    top: 100%;
     left: calc((100vw - 100%) / -2 + 1%);
 
     display: flex;
@@ -86,12 +95,11 @@
 
     width: 500px;
     height: 100px;
-    z-index: 10;
 }
 
 .header_leftDecor__line{
     width: 1px;
-    height: 150px;
+    height: 100px;
     
     background-color: var(--textColorGray);
 }

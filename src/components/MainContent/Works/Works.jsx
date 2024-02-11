@@ -8,6 +8,8 @@ import F from './ProjectsPreview/BitcoinList.png';
 
 import ProjectsSmallList from "./ProjectsSmallList/ProjectsSmallList";
 
+import { WORKS_ROUTE } from "../../../utils/consts";
+
 const Works = () => {   
     const BigProjects = [
         {
@@ -71,13 +73,13 @@ const Works = () => {
     ]
 
     return(
-        <section className="Works">
+        <section className="Works" id="section2" data-section>
             <div className="container">
                 <div className="works_wrapper">
                     <div className="works_title__wrapper">
                         <h1 className="works_title"><span className="works_span">#</span>projects</h1>
                         <div className="works_title_line"></div>
-                        <ButtonText text="View all" link="#" />
+                        <ButtonText text="View all" link={WORKS_ROUTE} />
                     </div>
 
                     <div className="works_content__wrapper">
@@ -90,6 +92,15 @@ const Works = () => {
                             {SmallProjects.map(project => (
                                 <ProjectsSmallList project={project} key={uuidv4()}/>
                             ))}
+                        </div>
+                    </div>
+
+                    <div className="works_footer">
+                        <div className="works_footer__text">
+                            <p>See more projects with in-depth explanations!</p>
+                        </div>
+                        <div className="works_footer__btn">
+                            <ButtonText text={"Watch more!"} link={WORKS_ROUTE} textStyles={{fontSize: "22px"}} />
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import ArrowSvg from "../ProjectsSvg/ProjectsSvg.jsx"
 const ProjectsSmallList = ({project}) => {
 
     return(
-        <div className="project_wrapper" style={{maxWidth: "25%", border: "2px solid var(--textColorGray)"}}>
+        <div className="project_wrapper" style={{maxWidth: "25%", border: "2px solid var(--textColorGray)", backgroundColor: "var(--projectsWrappersBG)", zIndex: "1000"}}>
             <div className="project_img">
                 <img className="project_imgPreview" 
                     src={project.previewImg}
@@ -26,7 +26,6 @@ const ProjectsSmallList = ({project}) => {
                     <p>{project.text}</p>
                 </div>
                 <div className="project_footer">
-                    {/* <ArrowSvg /> */}
                     <ButtonSimple text="Live" link={project.href} stylesBtn={{margin: "4px 8px"}} svg={ArrowSvg} stylesSvg={{width: "20px"}} />
                 </div>
             </div>

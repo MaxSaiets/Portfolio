@@ -11,14 +11,14 @@ import githubSVG from "../../../img/header/github.svg"
 
 const Contacts = () => {   
     const contactsLinks = [
-        {topPos: "10px", leftPos: "0%", svg: telegramSVG, stylesSvg: {width: "40px", height: "40px"}, text: "Max_Saiets", href: "https://t.me/Max_Saiets", bgC: "#0088cc"},
-        {topPos: "75px", leftPos: "15%", svg: gmailSVG, stylesSvg: {width: "40px", height: "40px"}, text: "sayetsm@gmail.com", href: "mailto:sayetsm@gmail.com", bgC: "#525252"},
-        {topPos: "150px", leftPos: "30%", svg: upworkSVG, stylesSvg: {width: "40px", height: "40px"}, text: "Max S", href: "https://www.upwork.com/freelancers/~016ae2a0dbb6245846", bgC: "#32b320"},
-        {topPos: "200px", leftPos: "45%", svg: githubSVG, stylesSvg: {width: "40px", height: "40px"}, text: "Max Saiets", href: "https://github.com/MaxSaiets", bgC: "#0d1117"},
+        {topPos: "40px", leftPos: "5%", svg: telegramSVG, stylesSvg: {width: "40px", height: "40px"}, text: "Max_Saiets", href: "https://t.me/Max_Saiets", bgC: "#0088cc"},
+        {topPos: "75px", leftPos: "60%", svg: gmailSVG, stylesSvg: {width: "40px", height: "40px"}, text: "sayetsm@gmail.com", href: "mailto:sayetsm@gmail.com", bgC: "#525252"},
+        {topPos: "125px", leftPos: "25%", svg: upworkSVG, stylesSvg: {width: "40px", height: "40px"}, text: "Max S", href: "https://www.upwork.com/freelancers/~016ae2a0dbb6245846", bgC: "#32b320"},
+        {topPos: "150px", leftPos: "52%", svg: githubSVG, stylesSvg: {width: "40px", height: "40px"}, text: "Max Saiets", href: "https://github.com/MaxSaiets", bgC: "#0d1117"},
     ] 
 
     return(
-        <section className="Contacts">
+        <section className="Contacts" id="section5" data-section>
             <div className="container">
                 <div className="contacts_wrapper">
 

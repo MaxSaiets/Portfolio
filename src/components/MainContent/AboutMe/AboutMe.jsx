@@ -6,7 +6,7 @@ import ButtonSimple from "../../ButtonSimple/ButtonSimple";
 const AboutMe = () => {   
 
     return(
-        <section className="AboutMe">
+        <section className="AboutMe" id="section4" data-section>
             <div className="container">
                 <div className="aboutMe_wrapper">
 

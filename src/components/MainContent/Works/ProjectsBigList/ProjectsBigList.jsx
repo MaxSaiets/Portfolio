@@ -4,7 +4,7 @@ import ArrowSvg from "../ProjectsSvg/ProjectsSvg.jsx"
 
 const ProjectsBigList = ({project}) => {  
     return(
-        <div className="project_wrapper" style={{width: "49%", border: "2px solid var(--textColorGray)"}}>
+        <div className="project_wrapper" style={{width: "49%", border: "2px solid var(--textColorGray)", backgroundColor: "var(--projectsWrappersBG)", zIndex: "1000"}}>
             <div className="project_img">
                 <img className="project_imgPreview" 
                     src={project.previewImg}

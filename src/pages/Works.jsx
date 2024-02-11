@@ -2,19 +2,19 @@ import React from "react";
 //import { observer } from "mobx-react-lite";
 
 import Header from "../components/Header/Header";
-import MainContent from "../components/MainContent/MainContent";
 import Footer from "../components/Footer/Footer";
+import WorksContent from "../components/WorksContent/WorksContent";
 
 //observer
 
-const Main = () => {
+const Works = () => {
 
     return (
-        <div className="MainPage" style={{display: "flex", flexDirection: "column", minHeight: "100vh", margin: 0}}>
-                
+        <div className="WorksPage" style={{display: "flex", flexDirection: "column", minHeight: "100vh", margin: 0}}>
+
             <Header />
 
-            <MainContent />
+            <WorksContent />
 
             <Footer />
 
@@ -22,4 +22,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default Works;

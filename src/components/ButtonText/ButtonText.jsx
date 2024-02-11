@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const ButtonText = ({ text, link}) => {  
+const ButtonText = ({ text, link, textStyles}) => {  
     return(
         <div className="buttonText" style={{display: "inline-block"}}>
-            <a href={link} style={{width: "100%", height: "100%"}} className="btnText_content">
-                <p style={{fontSize: "16px", fontWeight: "500"}}>{text}</p>
-            </a>
+            <Link to={link} style={{width: "100%", height: "100%"}} className="btnText_content">
+                <p style={{fontSize: "16px", fontWeight: "500", ...textStyles }}>{text}</p>
+            </Link>
         </div>        
     );
 };

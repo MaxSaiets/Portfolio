@@ -12,6 +12,7 @@ const ContactsList = ({ elem }) => {
     left: elem.leftPos,
     border: "2px solid var(--textColorGray)",
     borderRadius: "6px",
+    zIndex: 1,
   };
 
   const linkBeforeStyles = {
@@ -23,7 +24,7 @@ const ContactsList = ({ elem }) => {
     height: "100%",
     backgroundColor: elem.bgC,
     transition: "width 0.5s ease",
-    zIndex: -10,
+    zIndex: -1,
   };
 
   return (
@@ -43,6 +44,7 @@ const ContactsList = ({ elem }) => {
           gap: "10px",
           alignItems: "center",
           padding: "5px",
+          zIndex: 2,
         }}
       >
         <img

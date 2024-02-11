@@ -50,3 +50,16 @@
     justify-content: space-between;
     gap: 10px;
 }
+
+.works_footer{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.works_footer__text{
+    font-size: 24px;
+}
+.works_footer__btn{
+}

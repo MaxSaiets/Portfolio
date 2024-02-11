@@ -12,7 +12,7 @@ const Skills = () => {
     ]
 
     return(
-        <section className="Skills">
+        <section className="Skills" id="section3" data-section>
             <div className="container">
                 <div className="skills_wrapper">
                     <div className="skills_title__wrapper">
