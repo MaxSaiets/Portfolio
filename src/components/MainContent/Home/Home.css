@@ -1,3 +1,8 @@
+.Home{
+    position: relative;
+    z-index: 100;
+}
+
 .home_wrapper{
     padding-top: 125px;
 
@@ -26,4 +31,30 @@
 }
 .home_btn__container{
 
+}
+
+
+.header_decor__figures{
+
+}
+.header_decor__DoubleSquareSvg{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+
+    width: 600px;
+    height: 600px;
+    z-index: -10;
+    fill: #eeeeee;
+    fill: #fff;
+    fill: #c1f285;
+    fill: #5bfb78;
+    fill: #a1f5e4;
+    fill: #333b38;
+    /* #5bfb78 #a1f5e4 #333b38 #eeeeee #333333 #c1f285*/
+
+    /* filter: drop-shadow(0px 0px 59.1082px #FFD359); */
+    /* filter: blur(30px); */
+    /* backdrop-filter: blur(50px); */
+    /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); */
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css"
 import ButtonSimple from "../../ButtonSimple/ButtonSimple";
 
+import DoubleSquareSvg from "../../svgShapes/DoubleSquareSvg"
 
 const Home = () => {   
 
@@ -19,6 +20,12 @@ const Home = () => {
                     <div className="home_btn__container">
                         <ButtonSimple text="Contact me!" link="#"/>
                     </div>
+                </div>
+            </div>
+
+            <div className="header_decor__figures">
+                <div className="header_decor__DoubleSquareSvg">
+                    <DoubleSquareSvg />
                 </div>
             </div>
         </section>

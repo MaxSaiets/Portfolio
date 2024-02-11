@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { AnimatePath } from "./headerWave_Logic";
 
 const  HeaderWaves = () => {
-    
+    let previusPoints;
+
     function findPointsOnSegment(startPoint, endPoint, numberOfPoints) {
         const result = [];
         
@@ -17,10 +18,10 @@ const  HeaderWaves = () => {
         return result;
     }
 
-    const initialPathPoints = findPointsOnSegment([180, 0], [0, 35], 15);
+    const initialPathPoints = findPointsOnSegment([160, 0], [0, 35], 15);
     
     // const pathData = AnimatePath("0 35 0 0 180 0", initialPathPoints, 3000);
-    const pathData = AnimatePath("0 35 0 0 180 0", initialPathPoints, 3000);
+    const pathData = AnimatePath(previusPoints, "0 35 0 0 160 0", initialPathPoints, 3000);
 
     const pathStyle = {
         fill: "var(--textColorSecond)",

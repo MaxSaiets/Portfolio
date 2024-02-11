@@ -34,7 +34,7 @@ const Header = () => {
     ]
     
     return(
-        <header className="header">
+        <header className="Header">
             
             <div className="header_decor">
                 <div className="header_waves">
