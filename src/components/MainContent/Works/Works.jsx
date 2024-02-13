@@ -10,6 +10,10 @@ import ProjectsSmallList from "./ProjectsSmallList/ProjectsSmallList";
 
 import { WORKS_ROUTE } from "../../../utils/consts";
 
+import DoubleSquareSvg from "../../svgShapes/DoubleSquareSvg";
+import HalfCircle from "../../../img/FiguresPng/HalfCircle.png";
+import ParallaxEffect from "../../utils/ParallaxEffect";
+
 const Works = () => {   
     const BigProjects = [
         {
@@ -74,7 +78,17 @@ const Works = () => {
 
     return(
         <section className="Works" id="section2" data-section>
+
+            <div className="works_decor__figures">
+                <ParallaxEffect Figure={DoubleSquareSvg} className={"works_decor__svgDoubleSquareSvg"}/>
+            </div>
+
             <div className="container">
+
+                <div className="works_decor__figures__container">
+                   <img className="works_decor__imgCircles" src={HalfCircle} />
+                </div>
+
                 <div className="works_wrapper">
                     <div className="works_title__wrapper">
                         <h1 className="works_title"><span className="works_span">#</span>projects</h1>
@@ -96,11 +110,8 @@ const Works = () => {
                     </div>
 
                     <div className="works_footer">
-                        <div className="works_footer__text">
-                            <p>See more projects with in-depth explanations!</p>
-                        </div>
                         <div className="works_footer__btn">
-                            <ButtonText text={"Watch more!"} link={WORKS_ROUTE} textStyles={{fontSize: "22px"}} />
+                            <ButtonText text={"See more projects with in-depth explanations! Watch more!"} link={WORKS_ROUTE} textStyles={{fontSize: "22px"}} />
                         </div>
                     </div>
                 </div>

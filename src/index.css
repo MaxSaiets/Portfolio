@@ -21,6 +21,9 @@
     --headerBG: rgba(41, 44, 43, 0.8);
 }
 html, body{
+  height: 100%;
+
+
   font-size: 20px;
   /* CenturyExpanded, LibreBodoni */
   /* font-family: 'FiraCode', sans-serif; */
@@ -39,7 +42,6 @@ html, body{
     padding: 0 30px;
     margin: 0 auto;
 }
-
 
 
 .buttonSimple {

@@ -1,5 +1,8 @@
 .Contacts{
-    
+    position: relative;
+    z-index: 100;
+
+    margin-bottom: 150px;
 }
 
 .contacts_wrapper{
@@ -26,7 +29,7 @@
     color: var(--textColorSecond)
 }
 .contacts_title_line{
-    width: 50%;
+    width: 30%;
     height: 3px;
     border-radius: 5px;
     background-color: var(--textColorSecond);
@@ -59,4 +62,22 @@
     transform: translate(-50%);
 
     font-size: 18px;
+}
+
+
+.contact_decor__figures__container{
+    position: relative;
+}
+.contact_decor__imgCircles{
+    position: absolute;
+    top: 100px;
+    left: 55%;
+
+    width: 500px;
+    height: 500px;
+    z-index: -10;
+
+    transform: rotate(45deg);
+
+    filter: invert(25%) blur(1.5px) drop-shadow(0px 0px 15px #4b4b4b);
 }

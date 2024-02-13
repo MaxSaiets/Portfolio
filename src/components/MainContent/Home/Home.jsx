@@ -2,13 +2,18 @@ import React from "react";
 import "./Home.css"
 import ButtonSimple from "../../ButtonSimple/ButtonSimple";
 
-import DoubleSquareSvg from "../../svgShapes/DoubleSquareSvg"
+import Circles from "../../../img/FiguresPng/Circles.png";
 
 const Home = () => {   
 
     return(
         <section className="Home" id="section1" data-section>
             <div className="container">
+                
+                <div className="header_decor__figures__container">
+                    <img className="header_decor__imgCircles" src={Circles} />
+                </div>
+
                 <div className="home_wrapper">
                     <div className="home_title">
                         <h1><span className="home_text__accented">Hello</span> everyone!</h1>
@@ -24,9 +29,7 @@ const Home = () => {
             </div>
 
             <div className="header_decor__figures">
-                <div className="header_decor__DoubleSquareSvg">
-                    <DoubleSquareSvg />
-                </div>
+                <div className="header_decor__neonLine"></div>
             </div>
         </section>
     );

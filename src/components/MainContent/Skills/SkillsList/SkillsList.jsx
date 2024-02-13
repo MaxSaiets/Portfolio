@@ -6,7 +6,7 @@ const SkillsList = ({elem}) => {
             <div className="skill_title__wrapper" style={{borderBottom: "2px solid var(--textColorGray)"}}>
                 <p 
                     className="skill_title" 
-                    style={{fontSize: "20px", fontWeight: "600", padding: "8px 10px"}}
+                    style={{fontFamily: "LibreBodoni", fontSize: "20px", fontWeight: "400", padding: "8px 10px"}}
                 >
                     {elem.title}
                 </p>

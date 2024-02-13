@@ -10,7 +10,7 @@ import Contacts from "./Contacts/Contacts";
 const MainContent = () => {    
 
     return(
-        <main style={{flex: "1 1 auto"}}>
+        <main style={{flex: "1 1 auto", overflow: "hidden"}}>
             <Home />
             
             <Works />
