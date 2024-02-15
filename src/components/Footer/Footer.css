@@ -116,3 +116,34 @@
     display: inline-block;
 }
 
+/* MEDIA */
+@media (max-width: 600px){
+    .footer_wrapper {
+        flex-direction: column-reverse;
+    }
+    .footer_links {
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+    .footer_secretLinks{
+        display: none;
+    }
+    .footer_content {
+        padding: 12px 0 16px 0;
+    }
+
+    .footer_quote{
+        line-height: 12px;
+    }
+    .footer_quote__text{
+        font-size: 12px;
+    }
+    .footer_quote__name{
+        font-size: 12px;
+        right: -5px;
+    }
+
+    .footer_decor__right{
+        display: none;
+    }
+}

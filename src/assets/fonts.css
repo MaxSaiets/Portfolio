@@ -18,38 +18,3 @@
         url("./fonts/CenturyExpanded_Regular.eot") format('eot');
     font-display: swap;
 }
-
-
-
-@font-face {
-    font-family: FiraCode;
-    font-weight: 400;
-    font-style: normal;
-    src: local("FiraCode"), 
-        url("./fonts/FiraCode_Regular.woff2") format('woff2'),
-        url("./fonts/FiraCode_Regular.woff") format('woff'), 
-        url("./fonts/FiraCode_Regular.eot") format('eot');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: FiraCode;
-    font-weight: 500;
-    font-style: normal;
-    src: local("FiraCode"), 
-        url("./fonts/FiraCode_Medium.woff2") format('woff2'),
-        url("./fonts/FiraCode_Medium.woff") format('woff'), 
-        url("./fonts/FiraCode_Medium.eot") format('eot');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: FiraCode;
-    font-weight: 600;
-    font-style: normal;
-    src: local("FiraCode"), 
-        url("./fonts/FiraCode_SemiBold.woff2") format('woff2'),
-        url("./fonts/FiraCode_SemiBold.woff") format('woff'), 
-        url("./fonts/FiraCode_SemiBold.eot") format('eot');
-    font-display: swap;
-}

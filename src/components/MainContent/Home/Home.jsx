@@ -16,14 +16,14 @@ const Home = () => {
 
                 <div className="home_wrapper">
                     <div className="home_title">
-                        <h1><span className="home_text__accented">Hello</span> everyone!</h1>
-                        <p>I am <span className="home_text__accented">Max</span> and I am web developer</p>
+                        <h1><span className="home_text__accented">Hello</span> World!</h1>
+                        <p>I am <span className="home_text__accented">Max</span>, a passionate web developer</p>
                     </div>
                     <div className="home_text">
-                        <p className="home_text__subtext">And I create websites where technologies meet creativity</p>
+                        <p className="home_text__subtext">weaving together cutting-edge technology and boundless creativity to build immersive websites. Join me on this journey through the art and science of web development.</p>
                     </div>
                     <div className="home_btn__container">
-                        <ButtonSimple text="Contact me!" link="#"/>
+                        <ButtonSimple text="Contact me!" link={"#section5"}/>
                     </div>
                 </div>
             </div>

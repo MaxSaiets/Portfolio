@@ -9,12 +9,12 @@ import Lines from "../../../img/FiguresPng/Lines.png";
 
 const Skills = () => {   
     const skills = [
-        {topPos: "0%", leftPos: "0%", title: "Languages", content: "JavaScript C# Python Golang TypeScript"},
-        {topPos: "10%", leftPos: "20%", title: "Databases", content: "FireBase PostgreSql Mongo"},
-        {topPos: "20%", leftPos: "40%", title: "Other", content: "HTML CSS SCSS"},
-        {topPos: "50%", leftPos: "0%", title: "Frameworks", content: "Express.js React-Js Vue React-Native"},
-        {topPos: "40%", leftPos: "60%", title: "Desktop development", content: "C# Windows-Forms"},
-        {topPos: "50%", leftPos: "30%", title: "Frameworks", content: "Express.js React Vue "},
+        {topPos: "0%", leftPos: "2%", title: "Languages", content: "JavaScript C# Python Golang TypeScript"},
+        {topPos: "40%", leftPos: "10%", title: "Databases", content: "FireBase MySQL PostgreSql MongoDB"},
+        {topPos: "40%", leftPos: "40%", title: "Other", content: "HTML CSS GIT Webpack Docker APIs SCSS"},
+        {topPos: "6%", leftPos: "30%", title: "Desktop development", content: "C# WinForms WPF"},
+        {topPos: "5%", leftPos: "55%", title: "Frameworks", content: "Express.js React-Js Vue React-Native ASP.NET"},
+        {topPos: "2%", leftPos: "80%", title: "AI", content: "Neural Networks Computer Vision "},
     ]
 
     return(

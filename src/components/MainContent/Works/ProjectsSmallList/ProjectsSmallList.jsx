@@ -1,11 +1,47 @@
 import React from "react";
-import ButtonSimple from "../../../ButtonSimple/ButtonSimple"
+import ButtonForSites from "../../../ButtonForSites/ButtonForSites"
 import ArrowSvg from "../ProjectsSvg/ProjectsSvg.jsx"
 
 const ProjectsSmallList = ({project}) => {
 
+    const projectTechnologiesStyle = {
+        color: "var(--textColorGray)", 
+        padding: "8px", 
+        borderTop: "2px solid var(--textColorGray)", 
+        borderBottom: "2px solid var(--textColorGray)"
+    };
+    const projectTitleStyle = {
+        fontSize: "24px", 
+        fontWeight: "500",
+    };
+    const projectDescriptionStyle = {
+        color: "var(--textColorGray)"
+    };
+    const projectContentStyle = {
+        padding: "16px", 
+        display: "flex", 
+        flexDirection: "column", 
+        gap: "16px",
+    };
+
+
+    const mediaQuery750 = window.matchMedia("(max-width: 750px)");
+    const mediaQuery600 = window.matchMedia("(max-width: 600px)");
+
+    if (mediaQuery750.matches) {
+        projectContentStyle.gap = "5px";
+        projectTechnologiesStyle.fontSize = "16px";
+        projectTitleStyle.fontSize = "20px";
+        projectDescriptionStyle.fontSize = "16px";
+        projectDescriptionStyle.lineHeight = "18px";
+    }
+    if (mediaQuery600.matches) {
+        projectContentStyle.gap = "3px";
+        projectContentStyle.padding = "8px";
+        projectTechnologiesStyle.padding = "8px";
+    }
     return(
-        <div className="project_wrapper" style={{maxWidth: "25%", border: "2px solid var(--textColorGray)", backgroundColor: "var(--projectsWrappersBG)", zIndex: "1000"}}>
+        <div className="project_wrapper" style={{marginBottom: "10px", border: "2px solid var(--textColorGray)", backgroundColor: "var(--projectsWrappersBG)", zIndex: "1000"}}>
             <div className="project_img">
                 <img className="project_imgPreview" 
                     src={project.previewImg}
@@ -14,19 +50,19 @@ const ProjectsSmallList = ({project}) => {
                 />
             </div>
             <div className="project_technologies"
-                style={{color: "var(--textColorGray)", padding: "8px", borderTop: "2px solid var(--textColorGray)", borderBottom: "2px solid var(--textColorGray)"}}
+                style={projectTechnologiesStyle}
             >
                 <p>{project.technologies}</p>
             </div>
-            <div className="project_content" style={{padding: "16px", display: "flex", flexDirection: "column", gap: "16px"}}>
-                <div className="project_title" style={{fontSize: "24px", fontWeight: "500"}}>
+            <div className="project_content" style={projectContentStyle}>
+                <div className="project_title" style={projectTitleStyle}>
                     <h1>{project.title}</h1>
                 </div>
-                <div className="project_description" style={{color: "var(--textColorGray)"}}>
+                <div className="project_description" style={projectDescriptionStyle}>
                     <p>{project.text}</p>
                 </div>
                 <div className="project_footer">
-                    <ButtonSimple text="Live" link={project.href} stylesBtn={{margin: "4px 8px"}} svg={ArrowSvg} stylesSvg={{width: "20px"}} />
+                    <ButtonForSites text="Live" link={project.href}svg={ArrowSvg} stylesSvg={{width: "20px"}} />
                 </div>
             </div>
         </div>

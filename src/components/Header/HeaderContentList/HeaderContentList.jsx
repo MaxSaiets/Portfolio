@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { MAIN_ROUTE } from "../../../utils/consts";
 
-const HeaderContentList = ({headerElem}) => {  
+const HeaderContentList = ({headerElem, toggleMenu}) => {  
     const navigate = useNavigate()
     
     const handleClick = () => {
@@ -18,6 +18,8 @@ const HeaderContentList = ({headerElem}) => {
                 top: offsetPosition,
                 behavior: "smooth" //плавність
             });
+ 
+            toggleMenu(); // закрити hamburgerMenu
         }
     };
 

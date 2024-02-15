@@ -27,6 +27,15 @@ const ContactsList = ({ elem }) => {
     zIndex: -1,
   };
 
+
+  const mediaQuery = window.matchMedia("(max-width: 1100px)");
+
+  if (mediaQuery.matches) {
+    linkStyles.position = "relative";
+    linkStyles.top = "0px";
+    linkStyles.left = "0px";
+  }
+
   return (
     <div
       className="contacts_opport__link"

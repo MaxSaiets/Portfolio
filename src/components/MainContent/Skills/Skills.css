@@ -63,3 +63,30 @@
 
     filter: invert(25%) blur(1.5px) drop-shadow(0px 0px 10px #777777);
 }
+
+
+
+/* MEDIA */
+@media (max-width: 950px){
+    .skills_content__main{
+        column-count: 3;
+    }
+}
+/* MEDIA */
+@media (max-width: 600px){
+    .skills_title__wrapper{
+        margin-top: 70px;
+    }
+    .skills_content__main {
+        column-count: 2;
+    }
+    .skills_title{
+        font-size: 26px;
+    }
+    .skills_content__wraper {
+        height: 680px;
+    }
+    .skills_decor__imgCircles {
+        right: -500px;
+    }
+}

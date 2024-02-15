@@ -26,7 +26,6 @@ html, body{
 
   font-size: 20px;
   /* CenturyExpanded, LibreBodoni */
-  /* font-family: 'FiraCode', sans-serif; */
   font-family: 'CenturyExpanded', sans-serif;
   font-weight: 400;
   color: #FFFFFF;
@@ -58,6 +57,13 @@ html, body{
     opacity: 0.7;
 }
 
-.header_waves{
-    z-index: 10;
+
+
+
+
+/* MEDIA */
+@media (max-width: 1250px){
+    .container{
+        padding: 0 60px; 
+    }
 }

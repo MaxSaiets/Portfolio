@@ -45,14 +45,77 @@
     flex-direction: column;
     gap: 20px;
 }
+
+
+
 .aboutMe_content__text{
+    display: block;
     color: var(--textColorGray);
     line-height: 28px;
+
 }
+
+.aboutMe_content__text:nth-child(n+2) {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.aboutMe_content.open .aboutMe_content__text:nth-child(n+2) {
+    display: block;
+    opacity: 1;
+}
+.aboutMe_content.open .aboutMe_content__moreBtn {
+    transform: rotateX(180deg);
+}
+
+.aboutMe_content__moreBtn{
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+
+    stroke: var(--textColorSecond);
+
+    transition: all 0.2s linear;
+}
+.aboutMe_content__moreBtn:hover{
+    opacity: 0.5;
+}
+.aboutMe_content__moreBtn__arrow{
+    width: 40px;
+    height: 40px;
+
+    display: none;
+}
+
+
 .aboutMe_content__footer{
     margin-top: 12px;
 }
 
-.aboutMe_content__img{
 
+/* MEDIA */
+@media (max-width: 1000px){
+    .aboutMe_content{
+        gap: 10px;
+    }
+    .aboutMe_content__text{
+        font-size: 18px;
+    }
+}
+
+/* MEDIA */
+@media (max-width: 1100px){
+    .aboutMe_content__text:nth-child(n+2){
+        display: none;
+    }
+    .aboutMe_content__moreBtn__arrow{
+        display: block;
+    }
+}
+@media (max-width: 600px){
+    .aboutMe_title{
+        font-size: 26px;
+    }
+    .aboutMe_title_line {
+        width: 45%;
+    }
 }

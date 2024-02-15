@@ -18,6 +18,11 @@ import { MAIN_ROUTE } from "../../utils/consts";
 import { Link } from "react-router-dom";
 
 const Header = () => {  
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setMenuOpen(!menuOpen);
+    };
 
     const headerSVGIcons = [
         {alt: "telegram", href: "https://t.me/Max_Saiets", src: telegramSVG},
@@ -60,11 +65,21 @@ const Header = () => {
                             <img src={HeaderLogoImg} className="header_logo__img" alt="Logo img" />
                             <p style={{display: 'inline-block', verticalAlign: 'middle'}} className="header_logo__text">Max Saiets</p>
                         </Link>
-                        <ul className="header_ul">
-                            {headerTitles.map(headerElem => (
-                                <HeaderContentList headerElem={headerElem} key={uuidv4()}/>
-                            ))}
-                        </ul>
+
+                        <div className={`hamburger_menu ${menuOpen ? "open" : ""}`}>
+                            
+                            <div className="menu__toggle" onClick={toggleMenu}>
+                                <div className="menu__bar"></div>
+                                <div className="menu__bar"></div>
+                                <div className="menu__bar"></div>
+                            </div>
+                           
+                            <ul className="header_ul">
+                                {headerTitles.map(headerElem => (
+                                    <HeaderContentList headerElem={headerElem} key={uuidv4()} toggleMenu={toggleMenu}/>
+                                ))}
+                            </ul>
+                        </div>
                     </nav>
 
                 </div>

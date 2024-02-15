@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { AnimatePath } from "./headerWave_Logic";
 
 const  HeaderWaves = () => {
@@ -20,8 +20,7 @@ const  HeaderWaves = () => {
 
     const initialPathPoints = findPointsOnSegment([160, 0], [0, 35], 15);
     
-    // const pathData = AnimatePath("0 35 0 0 180 0", initialPathPoints, 3000);
-    const pathData = AnimatePath(previusPoints, "0 35 0 0 160 0", initialPathPoints, 3000);
+    const pathData = AnimatePath(previusPoints, "0 35 0 0 160 0", initialPathPoints, 2000);
 
     const pathStyle = {
         fill: "var(--textColorSecond)",

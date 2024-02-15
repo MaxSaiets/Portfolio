@@ -20,8 +20,8 @@ const Works = () => {
             previewImg: F,
             technologies: "Html Css", 
             title: "BitcoinList", 
-            text: "Site BitcoinList about", 
-            href: "#"
+            text: " Site BitcoinList aboutSite BitcoinList aboutSite BitcoinList about", 
+            href: "https://www.youtube.com/watch?v=Fd_3EkGr0-4&list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbAVMFd_3EkGr0-4&start_radio=1"
         },
         {
             previewImg: F,
@@ -34,7 +34,7 @@ const Works = () => {
             previewImg: F,
             technologies: "Html Css", 
             title: "BitcoinList", 
-            text: "Site BitcoinList about", 
+            text: "Site BitcoinList ahsadfjlsdj jasfkl jsadfj asjdf lasjfkljsaf jk asjlkfj sljf lksaj jasd;f gdhgdfgdgdfgdfgdfgdfjvjkdkfv hh hh hboSite BitcoinList aboutSite BitcoinList aboutut", 
             href: "#"
         },
         {
