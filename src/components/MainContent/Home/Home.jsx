@@ -1,10 +1,14 @@
 import React from "react";
 import "./Home.css"
 import ButtonSimple from "../../ButtonSimple/ButtonSimple";
-
+import Box from "@mui/material/Box";
 import Circles from "../../../img/FiguresPng/Circles.png";
 
+import { useMediaQuery, useTheme } from "@mui/material";
+
 const Home = () => {   
+    const theme = useTheme();
+    const matches900 = useMediaQuery(theme.breakpoints.down("md"));
 
     return(
         <section className="Home" id="section1" data-section>
@@ -28,10 +32,22 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="header_decor__figures">
-                <div className="header_decor__neonLine"></div>
-            </div>
-        </section>
+            <Box
+                sx={{
+                    position: "fixed",
+                    top: 0,
+                    right: "-50px",
+                    width: matches900 ? "5px" : "20px",
+                    height: "100vh",
+                    zIndex: -10,
+                    backgroundColor: "#c1f285",
+                    borderRadius: "20px",
+                    boxShadow: matches900 ? "30px 0px 100px 100px #c1f285" : "100px 0px 100px 200px #c1f285",
+                    opacity: 0.3,
+                }}
+            />        
+
+      </section>
     );
 };
 

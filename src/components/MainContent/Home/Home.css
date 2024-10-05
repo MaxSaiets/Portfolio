@@ -37,7 +37,7 @@
 .header_decor__figures__container{
     position: relative;
 }
-.header_decor__neonLine{
+/* .header_decor__neonLine{
     position: absolute;
     top: 0px;
     right: -130px;
@@ -51,7 +51,8 @@
     stroke: #c1f285;
 
     box-shadow: 100px 0px 100px 200px #c1f285;
-}
+} */
+
 .header_decor__imgCircles{
     position: absolute;
     top: -70px;
@@ -94,10 +95,7 @@
         padding-top: 75px;
     }
 }
-@media (max-width: 400px){
-    .home_wrapper{
-        padding-top: 30px;
-    }
+@media (max-width: 500px){
     .home_title{
         font-size: 26px;
         line-height: 30px;

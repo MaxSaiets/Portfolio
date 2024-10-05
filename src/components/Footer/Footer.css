@@ -117,7 +117,7 @@
 }
 
 /* MEDIA */
-@media (max-width: 600px){
+@media (max-width: 720px){
     .footer_wrapper {
         flex-direction: column-reverse;
     }
@@ -140,7 +140,7 @@
     }
     .footer_quote__name{
         font-size: 12px;
-        right: -5px;
+        left: 40%;
     }
 
     .footer_decor__right{

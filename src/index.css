@@ -18,7 +18,8 @@
     /* --headerBG: rgb(48, 53, 62); */
     /* --headerBG: #242a28; */
     /* --headerBG: #292c2b; */
-    --headerBG: rgba(41, 44, 43, 0.8);
+    --headerBG: rgba(41, 44, 43, 0.7);
+    --headerBG2: rgba(41, 44, 43, 1);
 }
 html, body{
   height: 100%;
@@ -42,7 +43,7 @@ html, body{
     margin: 0 auto;
 }
 
-
+/* BTNS */
 .buttonSimple {
     transition: opacity 0.05s linear;
 }
@@ -57,8 +58,18 @@ html, body{
     opacity: 0.7;
 }
 
+.button_forSites{
+    transition: opacity 0.05s linear;
+}
+.button_forSites:hover{
+    opacity: 0.7;
+}
+/* /BTNS */
 
-
+/* RIGHT SCROLL */
+::-webkit-scrollbar{
+    width: 0px;
+}
 
 
 /* MEDIA */

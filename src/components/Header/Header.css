@@ -1,85 +1,33 @@
 .Header{
     position: sticky;
     top: 0px;
-    background: var(--headerBG);
-
+    
     z-index: 9999;
-
-    background-color: var(--headerBG);  
-    backdrop-filter: saturate(180%) blur(20px);
-
+    
     font-family: "LibreBodoni";
     font-weight: 500;
 }
-
-.header_nav{
-    padding-top: 20px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: flex-end;
-
-    position: relative;
-}
-.header_logo{
+.header_wrapper{
     position: absolute;
-    top: 15px;
-    /* left: calc((100vw - 70%) / -2 + 15%); */
-    left: 0px;
+    top: 0;
+    left: 0;
 
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
+    width: 100%;
+    
+    background: var(--headerBG);
+    background-color: var(--headerBG);  
+    backdrop-filter: saturate(180%) blur(20px);
 }
 .header_logo__img{
-    width: 30px;
-    height: 30px;
-
     filter: invert(100%)
 }
 .header_logo__text{
     font-size: 30px;
+    color: var(--textColorSecond)
 }
 
-
-
-
-.hamburger_menu {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-}
-
-.menu__toggle {
-    cursor: pointer;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-  
-.menu__bar {
-    width: 30px;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 4px 0;
-}
-
-
-.header_link{
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
-    color: var(--textColorGray);
-    overflow: hidden;
-}
-.header_link:hover{
-    color: var(--textColorWhite);
-}
 .headerNav_span{
     padding-right: 2px;
-    color: var(--textColorSecond)
 }
 
 .header_decor{
@@ -92,7 +40,6 @@
 
 .header_content{
     position: relative;
-    padding-bottom: 10px;
 }
 
 .header_leftDecor__container{
@@ -106,17 +53,6 @@
     align-items: center;
     gap: 10px;
 }
-.header_waves{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 500px;
-    height: 100px;
-
-    z-index: -10;
-}
-
 .header_leftDecor__line{
     width: 1px;
     height: 100px;
@@ -125,6 +61,7 @@
     z-index: -20;
 }
 .header_iconsUL{
+    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -134,18 +71,19 @@
 }
 
 
-
-.header_ul{
-    width: auto;
-    display: flex;
-    flex-direction: row;
-
-    gap: 32px;
-
-    transition: right 0.5s linear;
-    display: none;
+.header_link{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    color: var(--textColorGray);
+    overflow: hidden;
+    padding: 8px 12px;
 }
-
+.header_link:hover{
+    color: var(--textColorWhite);
+}
 /* MEDIA  */
 @media (max-width: 1500px){
     .header_waves{
@@ -162,77 +100,35 @@
         width: 270px;
     }
 }
+@media (max-width: 1000px){
+    .header_waves{
+        width: 270px;
+    }
+    .header_logo{
+        top: 50%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+}
 @media (max-width: 850px){
-    .header_ul{
-        gap: 15px;
-    }
-    .header_link{
-        font-size: 18px;
-    }
     .header_logo__text{
         font-size: 28px;
     }
-    .header_logo__img {
-        width: 20px;
-        height: 20px;
-    }
-}
-@media (max-width: 720px){
-    .header_nav{
-        padding-bottom: 0;
-    }
-    .header_logo{
-        padding-top: 5px;
-    }
-    .menu__toggle {
-        display: flex;
-    }
-    .header_ul{
-        /* display: none; */
-        position: absolute;
-        /* top: 100%; */
-        top: 133%;
-        right: -65px;
-
-        width: 130px;
-        height: 185px;
-        background: var(--headerBG);
-    }
-    .header_link{
-        padding-left: 15px;
-        padding-top: 10px;
-        font-size: 20px;
-    }
-}
-@media (max-width: 400px){
-    .container{
-        padding: 0 20px;
+    .header_leftDecor__line{
+        height: 60px;
     }
     .header_leftDecor__container{
         display: none;
     }
-    .header_nav{
-        padding-top: 0;
-        margin-top: 10px;
+}
+@media (max-width: 600px){
+    .container{
+        padding: 0 20px;
     }
-    .header_logo{
-        top: 0px;
-        padding: 0;
-    }
-    .hamburger_menu.open .header_ul {
-        top: 133%;
-        right: -20px;
-        display: block;
-    }
-
-
     .header_waves{
         transform: rotate(-8deg);   
-        width: 370px;
+        width: 360px;
         top: -25px;
-    }
-    .header_logo{
-        left: 50%;
-        transform: translate(-50%);
     }
 }

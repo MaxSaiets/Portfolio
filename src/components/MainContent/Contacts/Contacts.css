@@ -87,6 +87,9 @@
     .Contacts{
         margin-bottom: 50px;
     }
+    .contacts_title__wrapper {
+        margin-top: 75px;
+    }
     .contacts_opport{
         width: 270px;
         margin: 0 auto;
@@ -101,17 +104,19 @@
         text-align: center;
         transform: translate(0);
     }
+    .contacts_content{
+        gap: 20px;
+    }
 }
 @media (max-width: 600px){
-    .contacts_title__wrapper {
-        margin-top: 50px;
+    .contacts_title{
+        font-size: 26px;
     }
     .contacts_title_line {
         width: 45%;
     }
     .contacts_content{
         flex-direction: column;
-        gap: 20px;
     }
     .contacts_text__wrapper{
         width: auto;

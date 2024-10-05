@@ -100,15 +100,24 @@
         width: 50%;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 600px){
     .works_title{
         font-size: 26px;
     }
+}
+@media (max-width: 500px){
+    .works_title{
+        font-size: 26px;
+    }
+    .worksBiG_wrapper{
+        column-count: 1;
+    }
+}
+@media (max-width: 400px){
     .works_title_line{
         width: 30%;
     }
-
-    .worksBiG_wrapper{
+    .worksSmall_wrapper {
         column-count: 1;
     }
 }

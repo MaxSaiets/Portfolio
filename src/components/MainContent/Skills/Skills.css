@@ -71,20 +71,22 @@
     .skills_content__main{
         column-count: 3;
     }
+    .skills_content__wraper {
+        height: 100%;
+    }
 }
-/* MEDIA */
+@media (max-width: 720px){
+    .skills_content__main {
+        margin: 0 auto 15px auto;
+        column-count: 2;
+    }
+}
 @media (max-width: 600px){
     .skills_title__wrapper{
         margin-top: 70px;
     }
-    .skills_content__main {
-        column-count: 2;
-    }
     .skills_title{
         font-size: 26px;
-    }
-    .skills_content__wraper {
-        height: 680px;
     }
     .skills_decor__imgCircles {
         right: -500px;

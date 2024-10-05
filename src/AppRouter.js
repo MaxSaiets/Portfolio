@@ -9,7 +9,7 @@ const AppRouter = () => {
     return (
         <Routes> 
             {publicRoutes.map(({path, Component}) => 
-                <Route key={uuidv4()} path={path} element={<Component />} exact/> // exact - означає що путь повинен точно співпадати
+                <Route key={uuidv4()} path={path} element={<Component />} exact/> // exact - означає що шлях повинен точно співпадати
             )}
 
             <Route

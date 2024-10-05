@@ -1,8 +1,8 @@
 import React from "react";
 import { AnimatePath } from "./headerWave_Logic";
 
-const  HeaderWaves = () => {
-    let previusPoints;
+const  HeaderWaves = ({width, height, positionX, positionY, numberOfPoints, duration = 2000 }) => {
+    let previusPoints = [];
 
     function findPointsOnSegment(startPoint, endPoint, numberOfPoints) {
         const result = [];
@@ -18,9 +18,11 @@ const  HeaderWaves = () => {
         return result;
     }
 
-    const initialPathPoints = findPointsOnSegment([160, 0], [0, 35], 15);
+    const initialPathPoints = findPointsOnSegment([positionX, 0], [0, positionY], numberOfPoints);
+    // const initialPathPoints = findPointsOnSegment([900, 0], [0, 64], 30);
+    // const initialPathPoints = findPointsOnSegment([160, 0], [0, 35], 15);
     
-    const pathData = AnimatePath(previusPoints, "0 35 0 0 160 0", initialPathPoints, 2000);
+    const pathData = AnimatePath(previusPoints, `0 ${positionY} 0 0 ${positionX} 0`, initialPathPoints, duration);
 
     const pathStyle = {
         fill: "var(--textColorSecond)",
@@ -29,7 +31,7 @@ const  HeaderWaves = () => {
    
     return (
         <>
-            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox={`0 0 ${width} ${height}`} xmlns="http://www.w3.org/2000/svg">
                 <path className="wave_path" style={pathStyle} d={pathData} />
             </svg>  
         </>

@@ -14,13 +14,15 @@ const ContactsList = ({ elem }) => {
     borderRadius: "6px",
     zIndex: 1,
   };
+  const mediaQuery = window.matchMedia("(max-width: 1100px)");
+  const mediaQuery800 = window.matchMedia("(max-width: 800px)");
 
   const linkBeforeStyles = {
     content: "",
     position: "absolute",
     top: 0,
     left: 0,
-    width: isHovered ? "100%" : 0,
+    width: isHovered && !mediaQuery800.matches ? "100%" : 0,
     height: "100%",
     backgroundColor: elem.bgC,
     transition: "width 0.5s ease",
@@ -28,7 +30,6 @@ const ContactsList = ({ elem }) => {
   };
 
 
-  const mediaQuery = window.matchMedia("(max-width: 1100px)");
 
   if (mediaQuery.matches) {
     linkStyles.position = "relative";

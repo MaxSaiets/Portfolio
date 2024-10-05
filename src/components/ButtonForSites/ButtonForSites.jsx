@@ -16,6 +16,9 @@ const ButtonForSites = ({ text, borderColor = "var(--textColorSecond)", link, st
         padding: "8px 16px", 
         ...stylesBtn,
     };
+    const hoverStyles = {
+        opacity: 0.8,
+    };
 
     const mediaQuery = window.matchMedia("(max-width: 750px)");
 
@@ -26,7 +29,7 @@ const ButtonForSites = ({ text, borderColor = "var(--textColorSecond)", link, st
 
 
     return(
-        <div className="button_forSites" style={buttonForSitesStyle}>
+        <div className="button_forSites" style={{ ...buttonForSitesStyle, ':hover': hoverStyles }}>
             <a href={link} target="_blank" style={btnForSitesContentStyles} className="btnForSites_content">
                 <p style={{fontWeight: "500"}}>{text}</p>
 
