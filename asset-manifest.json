@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.740ece3a.css",
-    "main.js": "/Portfolio/static/js/main.45a272f3.js",
+    "main.css": "/Portfolio/static/css/main.fd92ca40.css",
+    "main.js": "/Portfolio/static/js/main.e4e7ef65.js",
     "static/media/BitcoinList.png": "/Portfolio/static/media/BitcoinList.fb11060065871db5dd76.png",
     "static/media/LibreBodoni_Medium.eot": "/Portfolio/static/media/LibreBodoni_Medium.100b6deacab7d1973aea.eot",
     "static/media/CenturyExpanded_Regular.eot": "/Portfolio/static/media/CenturyExpanded_Regular.cc9f17e1041fda6b75de.eot",
@@ -15,11 +15,11 @@
     "static/media/github.svg": "/Portfolio/static/media/github.154dfd74a7bb1827ec2f4cbc3e87bc13.svg",
     "static/media/HeaderLogoImg.svg": "/Portfolio/static/media/HeaderLogoImg.604a4d7996917c09995af88ef144394d.svg",
     "index.html": "/Portfolio/index.html",
-    "main.740ece3a.css.map": "/Portfolio/static/css/main.740ece3a.css.map",
-    "main.45a272f3.js.map": "/Portfolio/static/js/main.45a272f3.js.map"
+    "main.fd92ca40.css.map": "/Portfolio/static/css/main.fd92ca40.css.map",
+    "main.e4e7ef65.js.map": "/Portfolio/static/js/main.e4e7ef65.js.map"
   },
   "entrypoints": [
-    "static/css/main.740ece3a.css",
-    "static/js/main.45a272f3.js"
+    "static/css/main.fd92ca40.css",
+    "static/js/main.e4e7ef65.js"
   ]
 }
