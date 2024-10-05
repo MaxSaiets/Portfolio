@@ -8,18 +8,16 @@ import { HashRouter } from 'react-router-dom';
 const AppRouter = () => {
 
     return (
-        <HashRouter>
-            <Routes> 
-                {publicRoutes.map(({path, Component}) => 
-                    <Route key={uuidv4()} path={path} element={<Component />} exact/> // exact - означає що шлях повинен точно співпадати
-                )}
+        <Routes> 
+            {publicRoutes.map(({path, Component}) => 
+                <Route key={uuidv4()} path={path} element={<Component />} exact/> // exact - означає що шлях повинен точно співпадати
+            )}
 
-                <Route
-                    path="*"
-                    element={<Navigate to={MAIN_ROUTE} replace />}
-                />
-            </Routes>
-        </HashRouter>
+            <Route
+                path="*"
+                element={<Navigate to={MAIN_ROUTE} replace />}
+            />
+        </Routes>
     );
 };
 
